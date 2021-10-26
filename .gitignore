@@ -9,14 +9,3 @@ build/
 
 # Python
 *.pyc
-
-# Eclipse Code Files
-.cproject
-.project
-.settings
-
-# Git Modules
-.gitmodules
-
-# Metadata
-**/metadata/*
