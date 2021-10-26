@@ -10,7 +10,7 @@ option(COVERAGE "Generate Coverage Data" ON)
 
 if (COVERAGE)
     include(CodeCoverage)
-    set(LCOV_REMOVE_EXTRA "'vendor/*'" "'include/Eigen/*'" "'opencv-4.5.3/*'")
+    set(LCOV_REMOVE_EXTRA "'vendor/*'")
     setup_target_for_coverage(code_coverage test/cpp-test coverage)
     set(COVERAGE_SRCS app/Camera.cpp app/Detection.cpp app/Human.cpp app/Box.cpp include/Box.h include/Camera.hpp include/Human.h include/Detection.hpp)
 
