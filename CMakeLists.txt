@@ -1,9 +1,13 @@
 cmake_minimum_required(VERSION 3.2.1)
 project (HOG_Human_Detection)
-find_package(OpenCV REQUIRED)
 
 # Add project cmake modules to path.
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
+
+find_package(OpenCV REQUIRED)
+find_package(Eigen3 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(${EIGEN3_INCLUDE_DIR})
 
 # We probably don't want this to run on every build.
 option(COVERAGE "Generate Coverage Data" OFF)
