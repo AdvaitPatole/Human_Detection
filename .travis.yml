@@ -36,7 +36,7 @@ script:
   - test/cpp-test
 
 after_success:
-  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E ".*app/main.cpp" -E ".*opencv*" -E ".*include/Eigen/.*"
+  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E ".*app/main.cpp" -E ".*opencv*" 
 
 notifications:
   email: false
